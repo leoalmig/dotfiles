@@ -1,0 +1,9 @@
+no fancy tools for the job today
+
+- Install git (sudo apt-get install git)
+- Install rg (https://github.com/BurntSushi/ripgrep)
+- Install vim (from source)
+- Install tmux (sudo apt-get install tmux)
+- Install Vim Plug (https://github.com/junegunn/vim-plug)
+- Copy dotfiles into home
+- Open vim and run :PlugInstall
