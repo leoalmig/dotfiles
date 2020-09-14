@@ -6,6 +6,7 @@ Plug 'mileszs/ack.vim'
 call plug#end()
 
 syntax off
+filetype indent off
 let mapleader = " "
 
 set background=dark
@@ -21,8 +22,10 @@ set backspace=indent,eol,start
 set wildmenu
 set wildmode=longest:full,full
 set laststatus=2
-set showmatch
 set noswapfile
+set nosmartindent
+
+let g:loaded_matchparen = 1
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
@@ -43,5 +46,5 @@ cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
 
 autocmd Filetype go setlocal ts=8 sw=8 sts=8 noexpandtab
-autocmd Filetype c setlocal ts=4 sw=4 sts=4 expandtab
+autocmd Filetype c setlocal ts=8 sw=8 sts=8 expandtab
 autocmd Filetype make setlocal ts=4 sw=4 sts=4 noexpandtab
