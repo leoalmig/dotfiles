@@ -10,13 +10,13 @@ filetype indent off
 let mapleader = " "
 
 set background=dark
-set t_Co=256
 set visualbell
 set t_vb=
 set expandtab
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
+set scrolloff=2
 set incsearch
 set backspace=indent,eol,start
 set wildmenu
