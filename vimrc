@@ -37,6 +37,7 @@ let g:ctrlp_custom_ignore = {
 let g:NERDTreeDirArrowExpandable = '>'
 let g:NERDTreeDirArrowCollapsible = 'v'
 let g:NERDTreeNodeDelimiter = "\u00a0"
+let g:NERDTreeWinPos = "right"
 map <C-n> :NERDTreeToggle<CR>
 
 let g:ackprg = 'rg --vimgrep --type-not sql --smart-case'
