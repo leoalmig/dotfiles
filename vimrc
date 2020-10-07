@@ -47,5 +47,5 @@ cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
 
 autocmd Filetype go setlocal ts=8 sw=8 sts=8 noexpandtab
-autocmd Filetype c setlocal ts=8 sw=8 sts=8 expandtab
+autocmd Filetype c setlocal ts=8 sw=8 sts=8 noexpandtab
 autocmd Filetype make setlocal ts=4 sw=4 sts=4 noexpandtab
