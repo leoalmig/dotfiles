@@ -14,7 +14,6 @@ set t_vb=
 set scrolloff=2
 set wildmenu
 set wildmode=longest:full,full
-set laststatus=2
 set foldmethod=manual
 set nofoldenable
 
@@ -42,5 +41,16 @@ nnoremap <C-l> :e ~/Desktop/tmp<CR>
 nnoremap <C-g> :Rg<Space>
 nnoremap <C-n> :Ex<CR>
 vnoremap <C-j> zf
+
+" h4x0r statusline
+set laststatus=2
+set statusline=
+set statusline+=%f
+set statusline+=%h
+set statusline+=%m
+set statusline+=%r
+set statusline+=\ \|
+set statusline+=\ %l/%L
+set statusline+=\ 💀💀💀
 
 autocmd Filetype make setlocal ts=4 sw=4 sts=4 noexpandtab
