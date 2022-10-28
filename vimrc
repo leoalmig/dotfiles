@@ -1,4 +1,3 @@
-" TODO: this file is becoming a mess! Need more comments
 set nocompatible
 filetype off
 
@@ -7,16 +6,14 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jremmen/vim-ripgrep'
 Plug 'mattn/emmet-vim'
-Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
-Plug 'morhetz/gruvbox'
-
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'pangloss/vim-javascript'
-Plug 'leafgarland/typescript-vim'
-Plug 'maxmellon/vim-jsx-pretty'
+Plug 'vim-airline/vim-airline'
+Plug 'airblade/vim-gitgutter'
+
 Plug 'sheerun/vim-polyglot'
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 filetype plugin indent on
@@ -25,8 +22,8 @@ let mapleader=" "
 
 syntax enable
 set encoding=utf-8
-set background=dark
-colorscheme gruvbox
+set background=light
+colorscheme leco
 set lazyredraw
 set visualbell
 set t_vb=
@@ -35,6 +32,7 @@ set wildmenu
 set wildmode=longest:full,full
 set foldmethod=manual
 set nofoldenable
+set pumheight=10
 
 set expandtab
 set shiftwidth=2
@@ -53,15 +51,21 @@ set backspace=indent,eol,start
 set incsearch
 
 set laststatus=2
-set updatetime=300
+set updatetime=200
 set number
-set mouse=a
 
-let g:loaded_matchparen = 1
-let g:ctrlp_user_command = 'rg %s --files --color=never -g "!{tmp,node_modules,.git,deps,build,_build,dist,_dist,obj,bin}"'
+"let g:loaded_matchparen = 1
+let g:ctrlp_user_command = 'rg %s --files --hidden --color=never -g "!{tmp,node_modules,.git,deps,build,_build,dist,_dist,obj,bin}"'
+let g:ctrlp_working_path_mode = 0
 let g:rg_command = 'rg --vimgrep -S -g "!{tmp,node_modules,.git,deps,build,_build,dist,_dist,obj,bin}"'
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
-let g:coc_global_extensions = ['coc-tsserver','coc-fsharp']
+let g:coc_global_extensions = ['coc-tsserver','coc-css','coc-fsharp']
+
+call coc#config('suggest', { 'floatConfig': { 'border': [1,1,1,1] } })
+call coc#config('hover', { 'floatConfig': { 'border': [1,1,1,1] } })
+call coc#config('diagnostic', { 'floatConfig': { 'border': [1,1,1,1] } })
+call coc#config('signature', { 'floatConfig': { 'border': [1,1,1,1] } })
 
 nnoremap <C-n> :Ex<CR>
 nnoremap <C-g> :Rg<Space>
@@ -86,4 +90,5 @@ endfunction
 autocmd BufWritePre * :%s/\s\+$//e
 
 autocmd BufNewFile,BufRead *.fs,*.fsx,*.fsi set filetype=fsharp
-au BufEnter,BufNew *.fs,*.fsx,*.fsi  setlocal ts=4 sw=4 sts=4
+au BufEnter,BufNew *.fs,*.fsx,*.fsi setlocal ts=4 sw=4 sts=4
+au BufEnter,BufNew *.c setlocal ts=4 sw=4 sts=4
