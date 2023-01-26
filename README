@@ -4,4 +4,11 @@ deps:
 * vim + vim-plug (https://github.com/junegunn/vim-plug)
 * tmux
 * zsh + oh-my-zsh
+* asdf, node, erlang, rebar3, etc... (see asdf docs)
+
+install
 * copy global_gitconfig to $HOME/.gitconfig
+* copy vimrc to $HOME/.vimrc
+* copy tmux.conf to $HOME/.tmux.conf
+* copy zshrc to $HOME/.zshrc
+* copy coc-settings.json to $HOME/.vim/coc-settings.json
