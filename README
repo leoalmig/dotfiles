@@ -4,3 +4,4 @@ deps:
 * vim + vim-plug (https://github.com/junegunn/vim-plug)
 * tmux
 * zsh + oh-my-zsh
+* copy global_gitconfig to $HOME/.gitconfig
