@@ -1,0 +1,22 @@
+font: DejaVu Sans Mono - 11
+text: #000000
+bg: #FFFFFF
+text_select_fg: #F6F5F4
+text_select_bg: #241F31
+black: #000000
+dark_gray: #555555
+red: #AA0000
+light_red: #FF5555
+green: #0C750C
+light_green: #248824
+brown: #AA5500
+yellow: #ACAC21
+blue: #0000AA
+light_blue: #5555FF
+magenta: #AA00AA
+light_magenta: #FF55FF
+cyan: #00AAAA
+light_cyan: #3AAEAE
+light_gray: #AAAAAA
+white: #FFFFFF
+show_bold_in_bright: true
