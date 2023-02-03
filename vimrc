@@ -47,9 +47,9 @@ set incsearch
 set laststatus=2
 set updatetime=200
 
-let g:ctrlp_user_command = 'rg %s --files --hidden --color=never -g "!{tmp,node_modules,.git,deps,build,_build,dist,_dist,obj,bin}"'
+let g:ctrlp_user_command = 'rg %s --files --hidden --color=never -g "!{tmp,node_modules,.git,deps,build,_build,dist,_dist,obj,bin,*.beam}"'
 let g:ctrlp_working_path_mode = 0
-let g:rg_command = 'rg --vimgrep -S -g "!{tmp,node_modules,.git,deps,build,_build,dist,_dist,obj,bin}"'
+let g:rg_command = 'rg --vimgrep -S -g "!{tmp,node_modules,.git,deps,build,_build,dist,_dist,obj,bin,*.beam}"'
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 let g:coc_global_extensions = ['coc-tsserver']
