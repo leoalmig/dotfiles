@@ -3,9 +3,11 @@ deps:
 * rg (https://github.com/BurntSushi/ripgrep)
 * vim + vim-plug (https://github.com/junegunn/vim-plug)
 * tmux
-* asdf, node, erlang, rebar3, etc... (see asdf docs)
+* asdf, node (for CoC), erlang, rebar3, etc... (see asdf docs)
 
 install
+* install deps
+* copy bashrc to $HOME/.bashrc
 * copy global_gitconfig to $HOME/.gitconfig
 * copy vimrc to $HOME/.vimrc
 * copy tmux.conf to $HOME/.tmux.conf
