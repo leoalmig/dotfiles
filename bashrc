@@ -102,6 +102,14 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias gst='git status'
 alias glog='git log --oneline --graph --decorate'
 
+# XRandR alias for brightness
+# Find output Identifier using xrandr --verbose (e.g.: 0x42)
+screen_identifier=0x42
+alias bright10='xrandr --output $screen_identifier --brightness 1'
+alias bright9='xrandr --output $screen_identifier --brightness 0.9'
+alias bright8='xrandr --output $screen_identifier --brightness 0.8'
+alias bright7='xrandr --output $screen_identifier --brightness 0.7'
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
