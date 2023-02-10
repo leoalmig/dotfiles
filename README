@@ -1,15 +1,12 @@
 deps:
 * git
-* rg (https://github.com/BurntSushi/ripgrep)
 * vim + vim-plug (https://github.com/junegunn/vim-plug)
 * tmux
+* rg (https://github.com/BurntSushi/ripgrep)
 * asdf, node (for CoC), erlang, rebar3, etc... (see asdf docs)
 
 install
-* install deps
-* copy bashrc to $HOME/.bashrc
-* copy global_gitconfig to $HOME/.gitconfig
-* copy vimrc to $HOME/.vimrc
-* copy tmux.conf to $HOME/.tmux.conf
-* copy coc-settings.json to $HOME/.vim/coc-settings.json
-* config terminal font and colors according to term_config file
+* install deps (you know how to do it, right?)
+* move home files
+* move coc-settings.json to $HOME/.vim/
+* move erlang_ls.config to $HOME/.config/erlang_ls/
