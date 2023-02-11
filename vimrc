@@ -5,16 +5,16 @@ call plug#begin()
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jremmen/vim-ripgrep'
-Plug 'mattn/emmet-vim'
-Plug 'tpope/vim-fugitive'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'sheerun/vim-polyglot'
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
-Plug 'styled-components/vim-styled-components', {'branch': 'main'}
-Plug 'elixir-editors/vim-elixir'
+
+" Plugins I use at work
+"Plug 'mattn/emmet-vim'
+"Plug 'leafgarland/typescript-vim'
+"Plug 'peitalin/vim-jsx-typescript'
+"Plug 'styled-components/vim-styled-components', {'branch': 'main'}
 call plug#end()
 
 filetype plugin indent on
@@ -49,8 +49,8 @@ set updatetime=200
 
 let g:ctrlp_user_command = 'rg %s --files --hidden --color=never -g "!{tmp,node_modules,.git,deps,build,_build,dist,_dist,obj,bin,*.beam}"'
 let g:ctrlp_working_path_mode = 0
+
 let g:rg_command = 'rg --vimgrep -S -g "!{tmp,node_modules,.git,deps,build,_build,dist,_dist,obj,bin,*.beam}"'
-let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 let g:coc_global_extensions = ['coc-tsserver']
 call coc#config('suggest', { 'floatConfig': { 'border': [1,1,1,1] } })
