@@ -58,8 +58,6 @@ call coc#config('hover', { 'floatConfig': { 'border': [1,1,1,1] } })
 call coc#config('diagnostic', { 'floatConfig': { 'border': [1,1,1,1] } })
 call coc#config('signature', { 'floatConfig': { 'border': [1,1,1,1] } })
 
-nnoremap <C-m> :m .+1<CR>==
-nnoremap <C-i> :m .-2<CR>==
 nnoremap <C-n> :Ex<CR>
 nnoremap <C-g> :Rg<Space>
 nnoremap <C-l> :vsp<CR>
