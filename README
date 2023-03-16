@@ -10,3 +10,4 @@ install
 * move home files
 * move coc-settings.json to $HOME/.vim/
 * move erlang_ls.config to $HOME/.config/erlang_ls/
+* move rebar.config to $HOME/.config/rebar3/

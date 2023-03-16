@@ -9,6 +9,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'sheerun/vim-polyglot'
+Plug 'lfe-support/vim-lfe'
 
 " Plugins I use at work
 "Plug 'mattn/emmet-vim'

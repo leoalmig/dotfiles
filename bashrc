@@ -74,5 +74,6 @@ alias glog='git log --oneline --graph --decorate'
 
 ### Bin path and loaders
 export PATH=$PATH:$HOME/bin
+export PATH=$PATH:/opt/lfe-2.1.1/bin
 . "$HOME/.asdf/asdf.sh"
 . "$HOME/.asdf/completions/asdf.bash"
