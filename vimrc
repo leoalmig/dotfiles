@@ -83,4 +83,5 @@ endfunction
 autocmd BufWritePre * :%s/\s\+$//e
 
 au BufEnter,BufNew *.erl,*.hrl setlocal ts=4 sw=4 sts=4
+au BufEnter,BufNew *.c,*.h setlocal ts=4 sw=4 sts=4
 au FileType make setlocal noexpandtab ts=8 sw=8 sts=8
