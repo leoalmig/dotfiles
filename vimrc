@@ -6,20 +6,10 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jremmen/vim-ripgrep'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'vim-airline/vim-airline'
-Plug 'airblade/vim-gitgutter'
-Plug 'sheerun/vim-polyglot'
-Plug 'lfe-support/vim-lfe'
-
-" Plugins I use at work
-"Plug 'mattn/emmet-vim'
-"Plug 'leafgarland/typescript-vim'
-"Plug 'peitalin/vim-jsx-typescript'
-"Plug 'styled-components/vim-styled-components', {'branch': 'main'}
 call plug#end()
 
 filetype plugin indent on
-syntax enable
+syntax off
 set encoding=utf-8
 set background=light
 colorscheme leco
@@ -83,5 +73,5 @@ endfunction
 autocmd BufWritePre * :%s/\s\+$//e
 
 au BufEnter,BufNew *.erl,*.hrl setlocal ts=4 sw=4 sts=4
-au BufEnter,BufNew *.c,*.h setlocal ts=4 sw=4 sts=4
+au BufEnter,BufNew *.c,*.h setlocal ts=8 sw=8 sts=8
 au FileType make setlocal noexpandtab ts=8 sw=8 sts=8
