@@ -8,6 +8,7 @@ deps:
 install
 * install deps
 * move home files
+* move terminalrc to $HOME/.config/xfce4/terminal/ (or use term_config to replace values in other terminal emulators)
 * move coc-settings.json to $HOME/.vim/
 * move erlang_ls.config to $HOME/.config/erlang_ls/
 * move rebar.config to $HOME/.config/rebar3/
