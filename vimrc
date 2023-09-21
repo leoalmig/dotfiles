@@ -74,4 +74,5 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 au BufEnter,BufNew *.erl,*.hrl setlocal ts=4 sw=4 sts=4
 au BufEnter,BufNew *.c,*.h setlocal ts=8 sw=8 sts=8
+au BufEnter,BufNew *.js,*.ts,*.json setlocal ts=2 sw=2 sts=8
 au FileType make setlocal noexpandtab ts=8 sw=8 sts=8

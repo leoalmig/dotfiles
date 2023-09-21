@@ -6,7 +6,7 @@ deps:
 * asdf, node (for CoC), erlang, rebar3, etc... (see asdf docs)
 
 install
-* install deps (you know how to do it, right?)
+* install deps
 * move home files
 * move coc-settings.json to $HOME/.vim/
 * move erlang_ls.config to $HOME/.config/erlang_ls/
