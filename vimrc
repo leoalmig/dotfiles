@@ -43,7 +43,7 @@ let g:ctrlp_working_path_mode = 0
 
 let g:rg_command = 'rg --vimgrep -S -g "!{tmp,node_modules,.git,deps,build,_build,dist,_dist,obj,bin,*.beam}"'
 
-let g:coc_global_extensions = ['coc-tsserver']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-clojure']
 call coc#config('suggest', { 'floatConfig': { 'border': [1,1,1,1] } })
 call coc#config('hover', { 'floatConfig': { 'border': [1,1,1,1] } })
 call coc#config('diagnostic', { 'floatConfig': { 'border': [1,1,1,1] } })
